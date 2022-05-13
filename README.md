@@ -6,9 +6,9 @@ Here I store configuration files for ZSH modified by me to my needs, as well as 
 
 ## List of components:
 
-- **"Oh-my-zsh!"**, *Copyright (c) 2009-2022 [Robby Russell and contributors](https://github.com/ohmyzsh/ohmyzsh/contributors); [GitHub](https://github.com/ohmyzsh/ohmyzsh); [GitHub](https://github.com/romkatv/powerlevel10k) MIT*
+- **"Oh-my-zsh!"**, *Copyright (c) 2009-2022 [Robby Russell and contributors](https://github.com/ohmyzsh/ohmyzsh/contributors); [GitHub](https://github.com/ohmyzsh/ohmyzsh); MIT*
 - **"Zsh-syntax-highlighting"**, *Copyright (c) 2010-2020 zsh-syntax-highlighting contributors All rights reserved. [GitHub](https://github.com/zsh-users/zsh-syntax-highlighting/); [Licence](/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/COPYING.md)*
-- **"PowerLevel10k"**, *Copyright (c) 2009-2014 [Robby Russell and contributors](https://github.com/robbyrussell/oh-my-zsh/contributors); Copyright (c) 2014-2017 Ben Hilburn <bhilburn@gmail.com>; Copyright (c) 2019 Roman Perepelitsa <roman.perepelitsa@gmail.com> and [contributors](https://github.com/romkatv/powerlevel10k/contributors); MIT*
+- **"PowerLevel10k"**, *Copyright (c) 2009-2014 [Robby Russell and contributors](https://github.com/robbyrussell/oh-my-zsh/contributors); Copyright (c) 2014-2017 Ben Hilburn <bhilburn@gmail.com>; Copyright (c) 2019 Roman Perepelitsa <roman.perepelitsa@gmail.com> and [contributors](https://github.com/romkatv/powerlevel10k/contributors); [GitHub](https://github.com/romkatv/powerlevel10k); MIT*
 
 ## List of features
 
