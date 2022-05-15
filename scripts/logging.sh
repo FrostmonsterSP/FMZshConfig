@@ -2,7 +2,7 @@
 
 # Logging script
 
-i=0 # String counter
+sn=1 # String counter
 
 # Log function
 log () {
@@ -15,24 +15,20 @@ log () {
             "n") NST="\n"; MSGTYPE="";;
             "") MSGTYPE="";;
         esac
-    echo -e "$NST $(date +"%Y:%j:%H:%M:%S") $i:   $MSGTYPE$1" >> "$logfile"
-    i=$((i+1))
+    echo -e "$NST $(date +"%Y:%j:%H:%M:%S") $sn:   $MSGTYPE$1" >> "$logfile"
+    sn=$((sn+1))
     fi
 }
 
 # Log initialization
 loginit () {
-    if ! [ "$logfile" ]; then
-        logfile=".log/$(date +"%Y.%j.%H.%M.%S")_$1.log"
-        log "Logfile have been initialized"
-    else
-        log "Logfile already initialized"
-    fi
-    if ! [ -d .log/ ]; then mkdir .log/; log "Log dir not found" "er"; log "Log dir created"; fi
+    if ! [ -d .log/ ]; then mkdir .log/; fi
+    logfile=".log/$(date +"%Y.%j.%H.%M.%S")${0//'./'/_}.log"
+    log "Logfile have been initialized"
 }
 
 # Script logging start
 logstart () {
-    loginit "$1";
-    log "$1 started" "n"
+    loginit
+    log "${0//'./'/_} started" "n"
 }
