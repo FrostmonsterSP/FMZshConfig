@@ -82,11 +82,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-navigation-tools copypath)
 #. $ZSH/custom/plugins/zsh-mouse/zsh-mouse.zsh
 # zle-toggle-mouse
 
 source $ZSH/oh-my-zsh.sh
+if [[ "gem which colorls" ]] { source $(dirname $(gem which colorls))/tab_complete.sh; gcolors="yes" }
 
 # User configuration
 
@@ -115,11 +116,10 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 autoload -Uz zmv
+alias zadd-x="chmod +x"
 alias zreboot="exec zsh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
-alias lsa="ls -a"
-alias lsl="ls -al"
-alias aclean="sudo apt autoremove"
+if [[ gcolors="yes" ]] { alias lc='colorls -lA --sd' } else { alias lsa="ls -a"; alias lsl="ls -al" }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
@@ -135,7 +135,7 @@ if [[ "$TERM" == "linux" ]] {
 
 #}
 
-printf "$OPENMSG"
+#printf "$OPENMSG"
 startmsg
 if [[ -f "/usr/share/zsh/core/.cache/$(date +'%j%d%u%I%M')_checkfile" ]] {
     rm "/usr/share/zsh/core/.cache/$(date +'%j%d%u%I%M')_checkfile"
