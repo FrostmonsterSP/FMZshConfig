@@ -97,11 +97,11 @@ if [[ "gem which colorls" ]] { source $(dirname $(gem which colorls))/tab_comple
 export LANG=ru_RU.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nano'
- else
-   export EDITOR='gedit'
-fi
+#if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='nano'
+# else
+#   export EDITOR='gedit'
+#fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -119,7 +119,7 @@ autoload -Uz zmv
 alias zadd-x="chmod +x"
 alias zreboot="exec zsh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
-if [[ gcolors="yes" ]] { alias lc='colorls -lA --sd' } else { alias lsa="ls -a"; alias lsl="ls -al" }
+if [[ gcolors == "yes" ]] { alias lc='colorls -lA --sd' } else { alias lsa="ls -a"; alias lsl="ls -al" }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
