@@ -29,15 +29,6 @@ loginit () {
 
 # Script logging start; read name of script file
 logstart () {
-    LOGSTART="$0 STARTED"
     if ! [ -f logfile ]; then loginit; fi
-    logwrite "${0//'./'/_} started" "n"
-}
-
-# General log script; input is 1) Log Message 2) Message type: Error(er)/Critical(cr)/Line break (n)/Custom
-log () {
-    if $LOGSTATUS; then
-        if ! [ "${LOGSTART//' STARTED'/''}" ]; then logstart; fi
-        logwrite "$1" "n"
-    fi
+    logwrite "${0//'./'/} started" "n"
 }
