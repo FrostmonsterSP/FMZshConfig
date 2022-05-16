@@ -121,7 +121,6 @@ alias zreboot="exec zsh"
 alias zupdate="/usr/share/zsh/core/FM-scripts/update-zsh-settings.sh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
 alias lc="colorls -lA --dark --sd"
-alias ztest="echo test"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
