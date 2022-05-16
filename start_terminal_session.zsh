@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Initializig message
-if [[ -z "$TERM_PROGRAM" ]] {
+if ! [ "$TERM_PROGRAM" ] {
     neofetch
 } else {
     printf "\e[32m❯ \e[37;41m \e[0m \e[31m$(lsb_release -sd)\e[0m\n"
