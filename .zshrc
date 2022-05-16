@@ -118,8 +118,9 @@ export LANG=ru_RU.UTF-8
 autoload -Uz zmv
 alias zadd-x="chmod +x"
 alias zreboot="exec zsh"
+alias zupdate="/usr/share/zsh/core/FM-scripts/update-zsh-settings.sh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
-if [[ gcolors == "yes" ]] { alias lc='colorls -lA --sd' } else { alias lsa="ls -a"; alias lsl="ls -al" }
+alias lc='colorls -lA --dark --sd'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
