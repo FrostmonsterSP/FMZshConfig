@@ -6,7 +6,7 @@ if [[ -z "$TERM_PROGRAM" ]] {
 } else {
     printf "\e[32m❯ \e[37;41m \e[0m \e[31m$(lsb_release -sd)\e[0m\n"
 }
-printf "\n"
+echo
 if [[ "$USER" == "root" ]] {
    USERMSG="\e[30;41m☠ $USER:u TERMINAL SESSION INITIALIZED \e[0m\n"
 } else {

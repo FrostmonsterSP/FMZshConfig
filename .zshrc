@@ -116,11 +116,12 @@ export LANG=ru_RU.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 autoload -Uz zmv
-alias zadd-x="chmod +x"
+alias zaddx="chmod +x"
 alias zreboot="exec zsh"
 alias zupdate="/usr/share/zsh/core/FM-scripts/update-zsh-settings.sh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
-alias lc='colorls -lA --dark --sd'
+alias lc="colorls -lA --dark --sd"
+alias ztest="echo test"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
