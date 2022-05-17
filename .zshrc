@@ -114,6 +114,7 @@ export LANG=ru_RU.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+zaliaseshelp="Installed aliases:\n      \"zreboot\": exec zsh, reboots the shell\n      \"zupdate\": runs the settings update script, should be run under sudo, recommended to use\"zupdate && zreboot\" construction\n        \"zaddx\": makes a target file executable\n     \"startmsg\": shows start message\n           \"lc\": shows the contents of a directory\n          \"lcl\": shows the contents of a directory in detailed mode\n          \"lcf\": find a file in active directory\n     \"zaliases\": shows this message"
 
 autoload -Uz zmv
 alias zaddx="chmod +x"
@@ -122,7 +123,8 @@ alias zupdate="/usr/share/zsh/core/FM-scripts/update-zsh-settings.sh"
 alias startmsg="/usr/share/zsh/core/start_terminal_session.zsh"
 alias lc="colorls -A --dark --sd"
 alias lcl="colorls -lA --dark --sd"
-alias lcf="colorls -lA --dark --sd | grep "
+alias lcf="colorls -lA --dark --sd | grep -i "
+alias zaliases="echo -e \"$zaliaseshelp\""
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
