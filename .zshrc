@@ -146,3 +146,7 @@ startmsg
 if [[ -f "/usr/share/zsh/core/.cache/$(date +'%j%d%u%I%M')_checkfile" ]] {
     rm "/usr/share/zsh/core/.cache/$(date +'%j%d%u%I%M')_checkfile"
 }
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
