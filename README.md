@@ -18,7 +18,7 @@ Here I store configuration files for ZSH modified by me to my needs, as well as 
 - **Added welcome screens:** System info and different messages depending on the mode (root or not)
 - **Slightly modified themes:** A minor changes in configuration files
 
-## Whai I have to do
+## What I have to do
 
 Actually, I don't know. Really. This repo is just a storage for my experiments in zsh scripting.
 
